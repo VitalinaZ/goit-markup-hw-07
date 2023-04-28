@@ -1,0 +1,71 @@
+@media screen and (min-width: 428px) {
+  .container {
+    width: 428px;
+  }
+  .customers-item {
+    width: calc((100% - 16px) / 2);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+  .team-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .team-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .customers-item {
+    width: calc((100% - 24px) / 4);
+  }
+  .customers-list {
+    gap: 24px;
+  }
+  .principles-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .principles-list {
+    display: flex;
+
+    gap: 24px;
+    flex-wrap: wrap;
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
+  .team-item {
+    width: calc((100% - 72px) / 4);
+  }
+  .team-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .team {
+    padding: 120px 0px;
+  }
+  .customers-item {
+    width: calc((100% - 120px) / 6);
+  }
+  .principles-list {
+    display: flex;
+
+    gap: 24px;
+    flex-wrap: wrap;
+    text-align: start;
+  }
+  .principles-item {
+    width: calc((100% - 72px) / 4);
+  }
+  .principles {
+    gap: 24px;
+  }
+}
