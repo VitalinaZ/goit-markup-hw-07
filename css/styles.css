@@ -140,31 +140,47 @@ body {
 /*---------hero---------*/
 
 .hero-section {
-  padding: 188px 0px;
+  /* padding: 188px 0px; */
+
+  padding: 112px 0px;
   background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-bg.jpg);
+    url(../images/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1440px;
+  min-width: 320px;
 
   margin-left: auto;
   margin-right: auto;
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-mob-2x.jpg);
+  }
+}
 .hero-title {
+  display: flex;
   font-family: "Roboto", sans-serif;
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.1;
   text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
   color: var(--main-title-color, #ffffff);
   margin: 0 auto;
-  margin-bottom: 48px;
-  max-width: 496px;
+  margin-bottom: 72px;
+  min-width: 320px;
 }
 .hero-button {
   background-color: #4d5ae5;
@@ -211,7 +227,13 @@ body {
   /* align-items: flex-start; */
 }
 .principles-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
   text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
 }
 /* .principles-item::before { 
   display: block;
@@ -234,7 +256,7 @@ body {
 .icon-astronaut::before {
   background-image: url(../images/astronaut.svg);
 }*/
-.principles-title,
+/* .principles-title, */
 .team-name {
   font-weight: 500;
   font-size: 20px;
@@ -272,6 +294,7 @@ body {
 .doing-item {
   width: calc((100% - 24px) / 3);
 }
+
 /*-------Our Team-------*/
 .title {
   font-size: 36px;
@@ -303,11 +326,11 @@ body {
 .team-wrap {
   text-align: center;
 }
-.team-list {
-  /*display: flex;
+/*.team-list {
+  display: flex;
   gap: 24px;
-  flex-wrap: wrap;*/
-}
+  flex-wrap: wrap;
+}*/
 .team-item {
   background-color: #ffffff;
   /*width: calc((100% - 24px) / 4);
