@@ -8,6 +8,7 @@
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-bg-tab.jpg);
+    max-width: 768px;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -22,15 +23,20 @@
   }
   .hero-title {
     display: flex;
-    font-size: 36px;
   }
 
-  .customers-item {
-    width: calc((100% - 16px) / 2);
-  }
   .footer-logo {
     display: flex;
     justify-content: center;
+  }
+  .footer-label span {
+    display: flex;
+    text-align: start;
+
+    margin-bottom: 16px;
+  }
+  .team-item {
+    width: 268px;
   }
 }
 
@@ -62,6 +68,16 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+  .header-item {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    color: #434455;
+  }
+
   .line ::after {
     content: "";
     position: absolute;
@@ -93,6 +109,7 @@
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-bg.jpg);
+    max-width: 1440px;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -115,6 +132,7 @@
   }
   .principles-title {
     display: flex;
+    margin-bottom: 8px;
   }
   .principles-item {
     width: calc((100% - 24px) / 2);
@@ -127,27 +145,64 @@
     text-align: start;
   }
 
-  .team-item {
-    width: calc((100% - 24px) / 2);
-  }
   .team-list {
     display: flex;
-    gap: 24px;
+    gap: 72px 24px;
     flex-wrap: wrap;
+    justify-content: center;
+  }
+  .team-item {
+    width: 268px;
+    margin-bottom: 72px;
   }
   .customers-item {
-    width: calc((100% - 24px) / 4);
+    width: 168px;
   }
+
   .customers-list {
     gap: 24px;
   }
-  .wrap,
+
   .footer-social {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column;
     justify-content: space-between;
-    column-gap: 72px;
+    column-gap: 72px; */
     margin-left: auto;
+  }
+  .tablet {
+    display: flex;
+    gap: 24px;
+  }
+  .footer-p {
+    display: flex;
+    text-align: start;
+  }
+  .footer-container {
+    width: 582px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-wrap {
+    margin-right: 24px;
+  }
+  .footer-logo span {
+    text-align: start;
+  }
+  .footer-label span {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+
+  .footer-form {
+    display: flex;
+    margin-top: 72px;
+  }
+  .footer-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
   }
 }
 
