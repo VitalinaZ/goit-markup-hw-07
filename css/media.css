@@ -24,19 +24,13 @@
   .hero-title {
     display: flex;
   }
-
-  .footer-logo {
-    display: flex;
-    justify-content: center;
-  }
-  .footer-label span {
-    display: flex;
-    text-align: start;
-
-    margin-bottom: 16px;
-  }
   .team-item {
     width: 268px;
+  }
+  .team-list {
+    display: flex;
+
+    gap: 24px;
   }
 }
 
@@ -144,7 +138,10 @@
     flex-wrap: wrap;
     text-align: start;
   }
-
+  .team {
+    padding-top: 96px;
+    padding-bottom: 0px;
+  }
   .team-list {
     display: flex;
     gap: 72px 24px;
@@ -153,6 +150,8 @@
   }
   .team-item {
     width: 268px;
+  }
+  .team-item {
     margin-bottom: 72px;
   }
   .customers-item {
@@ -184,9 +183,16 @@
     flex-wrap: wrap;
   }
   .footer-wrap {
+    text-align: start;
+    max-width: 262px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
+
     margin-right: 24px;
   }
-  .footer-logo span {
+  .footer-logo {
+    display: flex;
     text-align: start;
   }
   .footer-label span {
@@ -209,6 +215,7 @@
 @media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
+    align-items: baseline;
   }
   .open-menu {
     display: none;
@@ -314,15 +321,17 @@
   }
 
   .team-item {
-    width: calc((100% - 72px) / 4);
+    width: 268px;
+  }
+  .team-list:not(:last-child) {
+    margin-bottom: 72px;
   }
   .team-list {
     display: flex;
-    gap: 24px;
     flex-wrap: wrap;
   }
   .team {
-    padding: 120px 0px;
+    padding-top: 120px;
   }
   .customers-item {
     width: calc((100% - 120px) / 6);
@@ -347,10 +356,10 @@
     display: flex;
   }
   .footer-soc-list {
-    max-width: 208px;
+    /* max-width: 208px; */
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 16px;
   }
 
   .footer-logo {
@@ -396,7 +405,7 @@
 
   .footer-p {
     display: flex;
-    justify-content: center;
+    text-align: start;
     max-width: 208px;
     font-weight: 500;
     font-size: 16px;
@@ -406,14 +415,12 @@
 
     margin-bottom: 16px;
   }
-  .footer-soc-list {
-    max-width: 208px;
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-  }
+
   .footer-soc-link:hover,
   .footer-soc-link:focus {
     background-color: #31d0aa;
+  }
+  .footer-label {
+    margin-top: 0;
   }
 }

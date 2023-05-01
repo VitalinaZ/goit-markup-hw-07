@@ -296,7 +296,7 @@ body {
 /*-------Working Principles-------*/
 
 .principles {
-  padding: 96px 0px 96px 0px;
+  padding: 96px 0px 60px 0px;
 }
 
 .principles-list {
@@ -417,10 +417,15 @@ body {
 .team-wrap {
   text-align: center;
 }
+.team-item:not(:last-child) {
+  margin-bottom: 72px;
+}
 .team-list {
   display: flex;
+  justify-content: center;
   gap: 24px;
   flex-wrap: wrap;
+  /* margin-bottom: 72px; */
 }
 .team-item {
   background-color: #ffffff;
@@ -432,7 +437,7 @@ body {
   width: 268px;
   /* margin-left: auto;
   margin-right: auto; */
-  margin-bottom: 72px;
+  /* margin-bottom: 72px; */
 }
 .team-title {
   margin-bottom: 72px;
@@ -525,11 +530,11 @@ body {
   color: var(--logo-color);
 }
 .footer-wrap {
-  /* text-align: center; */
+  text-align: center;
   max-width: 262px;
   margin-left: auto;
   margin-right: auto;
-  /* margin-bottom: 72px; */
+  margin-bottom: 72px;
 }
 .footer-social {
   margin-left: 110px;
@@ -567,8 +572,8 @@ body {
 }
 
 .footer-p {
-  /* display: flex;
-  justify-content: center; */
+  display: flex;
+  justify-content: center;
   max-width: 208px;
   font-weight: 500;
   font-size: 16px;
@@ -579,10 +584,10 @@ body {
   margin-bottom: 16px;
 }
 .footer-soc-list {
-  max-width: 208px;
+  /* max-width: 208px; */
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
 }
 .footer-soc-link:hover,
 .footer-soc-link:focus {
