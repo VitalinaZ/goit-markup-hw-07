@@ -175,7 +175,7 @@
   }
   .footer-p {
     display: flex;
-    text-align: start;
+    justify-content: flex-start;
   }
   .footer-container {
     width: 582px;
@@ -197,7 +197,7 @@
   }
   .footer-label span {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 16px;
   }
 
