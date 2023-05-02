@@ -321,7 +321,7 @@
   }
 
   .team-item {
-    width: 268px;
+    max-width: 264px;
   }
   .team-list:not(:last-child) {
     margin-bottom: 72px;
